@@ -1,0 +1,207 @@
+---
+import Head from "../components/Head.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <Head title="Heaven Topology" description="A library of idiosyncrasies" />
+    <body>
+        <main id="root">
+            <img src="/img/wing.gif" />
+            <div style="display: flex; justify-content: center">
+                <img src="/img/gbook.gif" />
+                <img src="/img/title.gif" />
+                <img src="/img/gbook.gif" />
+            </div>
+            <img src="/img/wing.gif" />
+
+            <h2>My Stuff:</h2>
+
+            <div class="grid">
+                <a href="/what-is">
+                    <article>
+                        <h3>What is Heaven Topology?</h3>
+                        <img
+                            src="/img/toruscan.gif"
+                            style="width: 150px; height: 150px;"
+                        />
+                    </article>
+                </a>
+
+                <a href="https://heaventopology.bandcamp.com">
+                    <article>
+                        <h3>Check out my Bandcamp!</h3>
+                        <iframe
+                            style="border: 0; width: 150px; height: 150px;"
+                            src="https://bandcamp.com/EmbeddedPlayer/album=3983002025/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
+                            seamless
+                            ><a
+                            href="https://heaventopology.bandcamp.com/album/archaeotypical-grapesongs">Archaeotypical
+                            Grapesongs by Heaven Topology</a></iframe
+                        >
+                    </article>
+                </a>
+
+                <a href="https://www.royalroad.com/fiction/35370/qqqq">
+                    <article>
+                        <h3>QQQQ (Web Serial)</h3>
+                        <img src="/img/Q.gif" />
+                    </article>
+                </a>
+
+                <a href="/favorite-albums.html">
+                    <article>
+                        <h3>My Music "Reviews"</h3>
+                        <img src="/img/green-star.gif" />
+                    </article>
+                </a>
+
+                <a href="https://rateyourmusic.com/~floopins">
+                    <article>
+                        <h3>My RYM Page (Friend Me!)</h3>
+                        <img src="/img/dance.gif" />
+                    </article>
+                </a>
+
+                <a href="https://towerhufham.itch.io/chromawarp">
+                    <article>
+                        <h3>Chromawarp (Web Game)</h3>
+                        <img src="/img/swirlball.gif" />
+                    </article>
+                </a>
+
+                <a href="https://sourceforge.net/projects/nethackmodern/">
+                    <article>
+                        <h3>Nethack Modern Texture Pack</h3>
+                        <img src="/img/sword-ani.gif" />
+                    </article>
+                </a>
+
+                <a href="https://roseburg.app/">
+                    <article>
+                        <h3>Roseburg (WIP Web Game)</h3>
+                        <img src="/img/Button_House.gif" />
+                    </article>
+                </a>
+
+                <a href="https://towerhufham.itch.io/dota-8">
+                    <article>
+                        <h3>DOTA-8 (Dota 2 Demake)</h3>
+                        <img src="/img/bmgirl.gif" />
+                    </article>
+                </a>
+
+                <a href="https://anilist.co/user/floopins/">
+                    <article>
+                        <h3>My Anilist Page</h3>
+                        <img src="/img/digi.gif" />
+                    </article>
+                </a>
+
+                <a href="/spirit-engineering.html">
+                    <article>
+                        <h3>Spirit Engineering</h3>
+                        <img src="/img/wizard1.gif" />
+                    </article>
+                </a>
+
+                <a href="https://thewizardtower.net/">
+                    <article>
+                        <h3>The Wizard Tower (Thoth Tarot Webapp)</h3>
+                        <img src="/img/tarot.gif" />
+                    </article>
+                </a>
+
+                <a href="https://gamejolt.com/games/burst-2/40423">
+                    <article>
+                        <h3>Burst 2 (Web Game)</h3>
+                        <img src="/img/ring.gif" />
+                    </article>
+                </a>
+            </div>
+
+            <h2 style="margin-top: 100px;">Cool Links:</h2>
+
+            <div class="grid">
+                <a href="https://ootrandomizer.com/">
+                    <article>
+                        <h3>Ocarina of Time Randomizer</h3>
+                        <img src="/img/linkmovingshield.gif" />
+                    </article>
+                </a>
+
+                <a href="http://www.progarchives.com/">
+                    <article>
+                        <h3>Prog Archives</h3>
+                        <img src="/img/sun.gif" />
+                    </article>
+                </a>
+
+                <a href="https://moriyashrine.org/">
+                    <article>
+                        <h3>Moriya Shrine</h3>
+                        <img src="/img/nitori.gif" />
+                    </article>
+                </a>
+
+                <a href="https://omega.duelistsunite.org/">
+                    <article>
+                        <h3>YGO Omega</h3>
+                        <img src="/img/puzzle.gif" />
+                    </article>
+                </a>
+
+                <a href="http://pc98.org/">
+                    <article>
+                        <h3>PC-98 Images (NSFW)</h3>
+                        <img src="/img/love.gif" />
+                    </article>
+                </a>
+            </div>
+        </main>
+        <style>
+            body {
+                background-image: url("/img/bgrbow.jpg");
+                font-family: serif;
+                background-color: white;
+                color: black;
+                font-family: Verdana;
+            }
+            main {
+                max-width: 1200px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: auto;
+                padding: 5% 10%;
+            }
+            img {
+                image-rendering: pixelated;
+                max-width: 100%;
+                max-height: 280px;
+            }
+            .grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                row-gap: 60px;
+            }
+            @media screen and (max-width: 992px) {
+                .grid {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+            @media screen and (max-width: 500px) {
+                .grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+            article {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+                max-height: 300px;
+            }
+        </style>
+    </body>
+</html>
