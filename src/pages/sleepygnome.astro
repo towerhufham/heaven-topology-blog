@@ -1,0 +1,59 @@
+---
+import Head from "../components/Head.astro";
+const posts = await Astro.glob("./sleepygnome/*.{md,mdx}")
+---
+
+<html>
+    <Head
+        title="What is Heaven Topology?"
+        description="I do my best to explain why I chose this name."
+    />
+    <body>
+        <main>
+            <img src="img/wing.gif" />
+      <a href="/index.html">
+        <div style="display: flex; justify-content: center">
+          <img src="img/gbook.gif" />
+          <img src="img/to-home.gif" />
+          <img src="img/gbook.gif" />
+        </div>
+      </a>
+      <img src="img/wing.gif" />
+      
+      <h1>The Sleepy Gnome Blog</h1>
+
+      <img src="/img/sleepygnome.jpg" alt="Watercolor art of a gnome falling asleep while writing in a cozy library."/>
+
+      <em>Art by katarina56</em>
+      
+      <div class="column">
+        <ul>
+            {posts.map((post) => (
+              <li><a href={post.url}>{post.frontmatter.title}</a></li>
+            ))}
+          </ul>
+      </div>
+        </main>
+    </body>
+</html>
+<style>
+    main {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding: 5% 10%;
+    }
+    body {
+        background-image: url("img/bgrbow.jpg");
+        font-family: serif;
+    }
+    #book {
+        background-color: AntiqueWhite;
+        padding: 15px;
+    }
+    h2 {
+        vertical-align: top;
+    }
+</style>

@@ -1,0 +1,25 @@
+---
+import Head from "../components/Head.astro";
+
+const { frontmatter } = Astro.props
+---
+
+<html>
+    <Head title={frontmatter.title} description={frontmatter.description} />
+    <body>
+        <main>
+            <slot/>
+            <a href="/sleepygnome">Return to blog</a>
+        </main>
+    </body>
+</html>
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main {
+        max-width: 65ch;
+    }
+</style>
