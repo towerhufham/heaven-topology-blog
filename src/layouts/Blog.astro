@@ -6,20 +6,10 @@ const { frontmatter } = Astro.props
 
 <html>
     <Head title={frontmatter.title} description={frontmatter.description} />
-    <body>
-        <main>
+    <body class="flex justify-center items-center">
+        <main class="max-w-prose">
             <slot/>
             <a href="/sleepygnome">Return to blog</a>
         </main>
     </body>
 </html>
-<style>
-    body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    main {
-        max-width: 65ch;
-    }
-</style>

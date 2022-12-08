@@ -6,7 +6,7 @@ import Head from "../components/Head.astro";
 <html lang="en">
     <Head title="Heaven Topology" description="A library of idiosyncrasies" />
     <body>
-        <main id="root">
+        <main id="root" class="max-w-[1200px] flex flex-col items-center m-auto p-[5% 10%]">
             <img src="/img/wing.gif" />
             <div style="display: flex; justify-content: center">
                 <img src="/img/gbook.gif" />
@@ -17,7 +17,7 @@ import Head from "../components/Head.astro";
 
             <h2>My Stuff:</h2>
 
-            <div class="grid">
+            <div class="grid grid-cols-4 gap-y-[60px] <lg:grid-cols-2 <md:grid-cols-1">
                 <a href="/what-is">
                     <article>
                         <h3>What is Heaven Topology?</h3>
@@ -132,7 +132,7 @@ import Head from "../components/Head.astro";
 
             <h2 style="margin-top: 100px;">Cool Links:</h2>
 
-            <div class="grid">
+            <div class="grid grid-cols-4 gap-y-[60px] <lg:grid-cols-2 <md:grid-cols-1">
                 <a href="https://ootrandomizer.com/">
                     <article>
                         <h3>Ocarina of Time Randomizer</h3>
@@ -179,38 +179,14 @@ import Head from "../components/Head.astro";
         <style>
             body {
                 background-image: url("/img/bgrbow.jpg");
-                font-family: serif;
                 background-color: white;
                 color: black;
-                font-family: Verdana;
-            }
-            main {
-                max-width: 1200px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin: auto;
-                padding: 5% 10%;
+                font-family: serif;
             }
             img {
                 image-rendering: pixelated;
                 max-width: 100%;
                 max-height: 280px;
-            }
-            .grid {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                row-gap: 60px;
-            }
-            @media screen and (max-width: 992px) {
-                .grid {
-                    grid-template-columns: 1fr 1fr;
-                }
-            }
-            @media screen and (max-width: 500px) {
-                .grid {
-                    grid-template-columns: 1fr;
-                }
             }
             article {
                 display: flex;

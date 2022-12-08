@@ -9,7 +9,7 @@ const posts = await Astro.glob("./sleepygnome/*.{md,mdx}")
         description="I do my best to explain why I chose this name."
     />
     <body>
-        <main>
+        <main class="max-w-[1200px] flex flex-col items-center m-auto p-[5% 10%]">
             <img src="img/wing.gif" />
       <a href="/index.html">
         <div style="display: flex; justify-content: center">
@@ -37,23 +37,8 @@ const posts = await Astro.glob("./sleepygnome/*.{md,mdx}")
     </body>
 </html>
 <style>
-    main {
-        max-width: 1200px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: auto;
-        padding: 5% 10%;
-    }
     body {
         background-image: url("img/bgrbow.jpg");
         font-family: serif;
-    }
-    #book {
-        background-color: AntiqueWhite;
-        padding: 15px;
-    }
-    h2 {
-        vertical-align: top;
     }
 </style>

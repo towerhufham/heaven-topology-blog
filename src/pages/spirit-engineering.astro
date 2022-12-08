@@ -8,7 +8,7 @@ import Head from "../components/Head.astro";
         description="I do my best to explain why I chose this name."
     />
     <body>
-        <main>
+        <main class="max-w-[1200px] flex flex-col items-center m-auto p-[5% 10%]">
             <img src="img/wing.gif" />
       <a href="/index.html">
         <div style="display: flex; justify-content: center">
@@ -21,7 +21,7 @@ import Head from "../components/Head.astro";
       
       <h2>This page is a collection of complicated spiritual diagrams I've collected from the internet. I enjoy the overwhelming nature of them! (I claim no ownership over the images or the ideas represented within them; I just want to spread them. The images link to the source where possible.)</h2>
       
-      <div class="column">
+      <div class="flex flex-col items-center">
         <img src="img/se/tree-of-life.jpg" />
         <a href="https://meru.org/"><img src="img/se/rubik.jpg" /></a>
         <img src="img/se/celestial.jpg" />
@@ -36,23 +36,8 @@ import Head from "../components/Head.astro";
     </body>
 </html>
 <style>
-    main {
-        max-width: 1200px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: auto;
-        padding: 5% 10%;
-    }
     body {
         background-image: url("img/bgrbow.jpg");
         font-family: serif;
-    }
-    #book {
-        background-color: AntiqueWhite;
-        padding: 15px;
-    }
-    h2 {
-        vertical-align: top;
     }
 </style>
