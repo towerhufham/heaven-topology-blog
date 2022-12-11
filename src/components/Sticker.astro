@@ -1,0 +1,14 @@
+---
+const { src, classes } = Astro.props
+---
+
+<img src={src} class={classes} alt="Sticker"/>
+
+<style>
+    img {
+        position: absolute;
+        z-index: 0;
+        max-width: 10vw;
+        min-width: 100px;
+    }
+</style>

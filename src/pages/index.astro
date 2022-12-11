@@ -1,5 +1,7 @@
 ---
 import Head from "../components/Head.astro";
+import Card from "../components/Card.astro";
+import Sticker from "../components/Sticker.astro";
 ---
 
 <!DOCTYPE html>
@@ -17,29 +19,37 @@ import Head from "../components/Head.astro";
 
             <h2>My Stuff:</h2>
 
-            <div class="grid grid-cols-4 gap-y-[60px] <lg:grid-cols-2 <md:grid-cols-1">
+            <Sticker src="/img/stickers/KITCHEN SINK-01.svg" classes="left-[10vw] top-[5%]"/>
+            <Sticker src="/img/stickers/KITCHEN SINK-12.svg" classes="right-[10vw] top-[32%]"/>
+            <Sticker src="/img/stickers/KITCHEN SINK-18.svg" classes="left-[5vw] top-[22%]"/>
+            <Sticker src="/img/stickers/KITCHEN SINK-24.svg" classes="left-[20vw] top-[122%]"/>
+            <Sticker src="/img/stickers/KITCHEN SINK-26.svg" classes="right-[5vw] top-[65%]"/>
+            <Sticker src="/img/stickers/KITCHEN SINK-36.svg" classes="right-[20vw] top-[100%]"/>
+            <Sticker src="/img/stickers/KITCHEN SINK-42.svg" classes="left-[5vw] top-[88%]"/>
+
+            <div class="flex flex-wrap justify-center gap-y-[60px] gap-x-[20px]">
                 <a href="/what-is">
-                    <article>
+                    <Card innerClasses="bg-gradient-to-b from-yellow-400 to-orange-500">
                         <h3>What is Heaven Topology?</h3>
                         <img
                             src="/img/toruscan.gif"
                             style="width: 150px; height: 150px;"
                         />
-                    </article>
+                    </Card>
                 </a>
 
                 <a href="/sleepygnome">
-                    <article>
+                    <Card innerClasses="bg-gradient-to-b from-yellow-400 to-orange-500">
                         <h3>Sleepy Gnome Blog</h3>
                         <img
                             src="/img/gnome.gif"
                             style="width: 150px; height: 150px;"
                         />
-                    </article>
+                    </Card>
                 </a>
 
                 <a href="https://heaventopology.bandcamp.com">
-                    <article>
+                    <Card innerClasses="bg-gradient-to-b from-yellow-400 to-orange-500">
                         <h3>Check out my Bandcamp!</h3>
                         <iframe
                             style="border: 0; width: 150px; height: 150px;"
@@ -49,141 +59,138 @@ import Head from "../components/Head.astro";
                             href="https://heaventopology.bandcamp.com/album/archaeotypical-grapesongs">Archaeotypical
                             Grapesongs by Heaven Topology</a></iframe
                         >
-                    </article>
+                    </Card>
                 </a>
 
                 <a href="https://www.royalroad.com/fiction/35370/qqqq">
-                    <article>
+                    <Card innerClasses="bg-gradient-to-b from-yellow-400 to-orange-500">
                         <h3>QQQQ (Web Serial)</h3>
                         <img src="/img/Q.gif" />
-                    </article>
+                    </Card>
                 </a>
 
                 <a href="/favorite-albums.html">
-                    <article>
+                    <Card innerClasses="bg-gradient-to-b from-yellow-400 to-orange-500">
                         <h3>My Music "Reviews"</h3>
                         <img src="/img/green-star.gif" />
-                    </article>
+                    </Card>
                 </a>
 
                 <a href="https://rateyourmusic.com/~floopins">
-                    <article>
+                    <Card innerClasses="bg-gradient-to-b from-yellow-400 to-orange-500">
                         <h3>My RYM Page (Friend Me!)</h3>
                         <img src="/img/dance.gif" />
-                    </article>
+                    </Card>
                 </a>
 
                 <a href="https://towerhufham.itch.io/chromawarp">
-                    <article>
+                    <Card innerClasses="bg-gradient-to-b from-yellow-400 to-orange-500">
                         <h3>Chromawarp (Web Game)</h3>
                         <img src="/img/swirlball.gif" />
-                    </article>
+                    </Card>
                 </a>
 
                 <a href="https://sourceforge.net/projects/nethackmodern/">
-                    <article>
+                    <Card innerClasses="bg-gradient-to-b from-yellow-400 to-orange-500">
                         <h3>Nethack Modern Texture Pack</h3>
                         <img src="/img/sword-ani.gif" />
-                    </article>
+                    </Card>
                 </a>
 
                 <a href="https://roseburg.app/">
-                    <article>
+                    <Card innerClasses="bg-gradient-to-b from-yellow-400 to-orange-500">
                         <h3>Roseburg (WIP Web Game)</h3>
                         <img src="/img/Button_House.gif" />
-                    </article>
+                    </Card>
                 </a>
 
                 <a href="https://towerhufham.itch.io/dota-8">
-                    <article>
+                    <Card innerClasses="bg-gradient-to-b from-yellow-400 to-orange-500">
                         <h3>DOTA-8 (Dota 2 Demake)</h3>
                         <img src="/img/bmgirl.gif" />
-                    </article>
+                    </Card>
                 </a>
 
                 <a href="https://anilist.co/user/floopins/">
-                    <article>
+                    <Card innerClasses="bg-gradient-to-b from-yellow-400 to-orange-500">
                         <h3>My Anilist Page</h3>
                         <img src="/img/digi.gif" />
-                    </article>
+                    </Card>
                 </a>
 
                 <a href="/spirit-engineering.html">
-                    <article>
+                    <Card innerClasses="bg-gradient-to-b from-yellow-400 to-orange-500">
                         <h3>Spirit Engineering</h3>
                         <img src="/img/wizard1.gif" />
-                    </article>
+                    </Card>
                 </a>
 
                 <a href="https://thewizardtower.net/">
-                    <article>
+                    <Card innerClasses="bg-gradient-to-b from-yellow-400 to-orange-500">
                         <h3>The Wizard Tower (Thoth Tarot Webapp)</h3>
                         <img src="/img/tarot.gif" />
-                    </article>
+                    </Card>
                 </a>
 
                 <a href="https://gamejolt.com/games/burst-2/40423">
-                    <article>
+                    <Card innerClasses="bg-gradient-to-b from-yellow-400 to-orange-500">
                         <h3>Burst 2 (Web Game)</h3>
                         <img src="/img/ring.gif" />
-                    </article>
+                    </Card>
                 </a>
             </div>
 
             <h2 style="margin-top: 100px;">Cool Links:</h2>
 
-            <div class="grid grid-cols-4 gap-y-[60px] <lg:grid-cols-2 <md:grid-cols-1">
+            <div class="flex flex-wrap justify-center gap-y-[60px] gap-x-[20px]">
                 <a href="https://ootrandomizer.com/">
-                    <article>
+                    <Card innerClasses="bg-gradient-to-b from-yellow-400 to-orange-500">
                         <h3>Ocarina of Time Randomizer</h3>
                         <img src="/img/linkmovingshield.gif" />
-                    </article>
+                    </Card>
                 </a>
 
                 <a href="http://www.progarchives.com/">
-                    <article>
+                    <Card innerClasses="bg-gradient-to-b from-yellow-400 to-orange-500">
                         <h3>Prog Archives</h3>
                         <img src="/img/sun.gif" />
-                    </article>
+                    </Card>
                 </a>
 
                 <a href="https://moriyashrine.org/">
-                    <article>
+                    <Card innerClasses="bg-gradient-to-b from-yellow-400 to-orange-500">
                         <h3>Moriya Shrine</h3>
                         <img src="/img/nitori.gif" />
-                    </article>
+                    </Card>
                 </a>
 
                 <a href="https://omega.duelistsunite.org/">
-                    <article>
+                    <Card innerClasses="bg-gradient-to-b from-yellow-400 to-orange-500">
                         <h3>YGO Omega</h3>
                         <img src="/img/puzzle.gif" />
-                    </article>
+                    </Card>
                 </a>
 
                 <a href="http://pc98.org/">
-                    <article>
+                    <Card innerClasses="bg-gradient-to-b from-yellow-400 to-orange-500">
                         <h3>PC-98 Images (NSFW)</h3>
                         <img src="/img/love.gif" />
-                    </article>
+                    </Card>
                 </a>
 
                 <a href="https://2e.aonprd.com/">
-                    <article>
+                    <Card innerClasses="bg-gradient-to-b from-yellow-400 to-orange-500">
                         <h3>Archives of Nethys</h3>
                         <img src="/img/knight1.gif" />
-                    </article>
+                    </Card>
                 </a>
             </div>
         </main>
         <style>
             body {
-                background-image: url("/img/bgrbow.jpg");
-                background-color: white;
-                color: black;
-                font-family: serif;
+                background-image: url('/img/skybg.jpg');
             }
-            img {
+            a img {
                 image-rendering: pixelated;
                 max-width: 100%;
                 max-height: 280px;
